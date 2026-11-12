@@ -1,0 +1,13 @@
+# Ignora arquivos desnecessários na compilação
+target/
+.git/
+.idea/
+.vscode/
+
+# Não envia os arquivos do banco para a compilação
+mysql-data/
+
+*.iml
+
+# Arquivo de imagens Docker
+imagens-docker.tar
