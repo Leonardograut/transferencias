@@ -29,10 +29,6 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: 123456
 
-
-    volumes:
-      - ./mysql-data:/var/lib/mysql
-
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
       interval: 5s
